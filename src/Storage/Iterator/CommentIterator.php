@@ -2,16 +2,17 @@
 namespace Societymo\Storage\Iterator;
 
 use YPHP\Iterator;
-use Societymo\Article;
+use Societymo\Comment;
 
-class ArticleIterator extends Iterator{
+class CommentIterator extends Iterator{
 
     /**
      * 
      *
-     * @return Article
+     * @return Comment
      */
     function current() {
         return parent::current();
     }
+
 }

@@ -1,17 +1,9 @@
 <?php
 namespace Societymo;
-use UltimateModel\Entity;
 
-class NormalArticle extends Entity{
+class ArticleXX extends ArticleX{
 
     /**
-     * 
-     *
-     * @var Article
-     */
-    protected $article;
-
-            /**
      * 
      *
      * @var string
@@ -23,36 +15,6 @@ class NormalArticle extends Entity{
      * @var string
      */
     protected $dirFileContent;
-
-    public function __construct($id = "",Article $article = null)
-    {
-        $this->setId($id);
-        $this->article = $article;
-    }
-
-    /**
-     * Get the value of article
-     *
-     * @return  Article
-     */ 
-    public function getArticle()
-    {
-        return $this->article;
-    }
-
-    /**
-     * Set the value of article
-     *
-     * @param  Article  $article
-     *
-     * @return  self
-     */ 
-    public function setArticle(Article $article)
-    {
-        $this->article = $article;
-
-        return $this;
-    }
 
     /**
      * Get the value of dirFileContent
@@ -74,13 +36,10 @@ class NormalArticle extends Entity{
     public function setDirFileContent(string $dirFileContent)
     {
         if(file_exists($dirFileContent)){
-
             $this->setContent(file_get_contents($dirFileContent));
-
         }
 
         $this->dirFileContent = $dirFileContent;
-
         return $this;
     }
 

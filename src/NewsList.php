@@ -1,10 +1,11 @@
 <?php
 namespace Societymo;
 use Societymo\Storage\ArticleStorage;
+use YPHP\Entity;
 
-class NewsList{
+class NewsList extends Entity{
 
-        /**
+    /**
      * 
      *
      * @var ArticleStorage

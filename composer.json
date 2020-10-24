@@ -10,7 +10,10 @@
         "psr-4": {
             "Societymo\\": "src/"
         },
-        "files": ["src/functions.php"]
+        "files": [
+            "src/functions.php",
+            "src/awake.php"
+        ]
     },
     "require": {
         "php": ">=5.3",

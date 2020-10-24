@@ -2,16 +2,17 @@
 namespace Societymo\Storage\Iterator;
 
 use YPHP\Iterator;
-use Societymo\Article;
+use Societymo\Rating;
 
-class ArticleIterator extends Iterator{
+class RatingIterator extends Iterator{
 
     /**
      * 
      *
-     * @return Article
+     * @return Rating
      */
     function current() {
         return parent::current();
     }
+
 }

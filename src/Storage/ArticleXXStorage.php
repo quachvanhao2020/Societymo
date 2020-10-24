@@ -2,26 +2,26 @@
 namespace Societymo\Storage;
 
 use YPHP\ArrayObject;
-use Societymo\Storage\Iterator\ArticleIterator;
-use Societymo\Article;
+use Societymo\Storage\Iterator\ArticleXXIterator;
+use Societymo\ArticleXX;
 
-class ArticleStorage extends ArrayObject{
+class ArticleXXStorage extends ArrayObject{
 
         /**
      * Create a new iterator from an ArrayObject instance
      *
-     * @return ArticleIterator
+     * @return ArticleXXIterator
      */
     public function getIterator()
     {
-        return new ArticleIterator($this->storage);
+        return new ArticleXXIterator($this->storage);
     }
 
 
     /**
      * Get the value of storage
      *
-     * @return  Article[]
+     * @return  ArticleXX[]
      */ 
     public function getStorage()
     {
@@ -31,7 +31,7 @@ class ArticleStorage extends ArrayObject{
             /**
      * Set the value of storage
      *
-     * @param  \UltimateModel\Model\Article[]  $storage
+     * @param  ArticleXX[]  $storage
      *
      * @return  self
      */ 
