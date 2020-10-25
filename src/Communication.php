@@ -1,8 +1,9 @@
 <?php
 namespace Societymo;
 use Societymo\Storage\CommentStorage;
+use YPHP\Entity;
 
-class Communication{
+class Communication extends Entity{
     /**
      * 
      *
