@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/quachvanhao2020/Identimo.git",
-                "reference": "6bd39875c3ca92e9eebba15adfb467755b1a95ab"
+                "reference": "c6050047f19bce32416e9928e80f35dfa7272f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/quachvanhao2020/Identimo/zipball/6bd39875c3ca92e9eebba15adfb467755b1a95ab",
-                "reference": "6bd39875c3ca92e9eebba15adfb467755b1a95ab",
+                "url": "https://api.github.com/repos/quachvanhao2020/Identimo/zipball/c6050047f19bce32416e9928e80f35dfa7272f41",
+                "reference": "c6050047f19bce32416e9928e80f35dfa7272f41",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 "source": "https://github.com/quachvanhao2020/Identimo/tree/main",
                 "issues": "https://github.com/quachvanhao2020/Identimo/issues"
             },
-            "time": "2020-10-23T13:17:48+00:00"
+            "time": "2020-10-28T12:40:38+00:00"
         },
         {
             "name": "hao/yphp",
@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/quachvanhao2020/YPHP.git",
-                "reference": "0b23a0cb01ec37cb9e1d7127291452720e3e1ac4"
+                "reference": "c8963fb3e62bfbdcf43750b456b8f6e1c9a14755"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/quachvanhao2020/YPHP/zipball/0b23a0cb01ec37cb9e1d7127291452720e3e1ac4",
-                "reference": "0b23a0cb01ec37cb9e1d7127291452720e3e1ac4",
+                "url": "https://api.github.com/repos/quachvanhao2020/YPHP/zipball/c8963fb3e62bfbdcf43750b456b8f6e1c9a14755",
+                "reference": "c8963fb3e62bfbdcf43750b456b8f6e1c9a14755",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
                 "source": "https://github.com/quachvanhao2020/YPHP/tree/main",
                 "issues": "https://github.com/quachvanhao2020/YPHP/issues"
             },
-            "time": "2020-10-24T01:09:10+00:00"
+            "time": "2020-10-28T12:30:04+00:00"
         },
         {
             "name": "netresearch/jsonmapper",
