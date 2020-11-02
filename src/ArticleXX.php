@@ -33,7 +33,7 @@ class ArticleXX extends ArticleX{
      *
      * @return  self
      */ 
-    public function setDirFileContent(string $dirFileContent)
+    public function setDirFileContent(string $dirFileContent = null)
     {
         if(file_exists($dirFileContent)){
             $this->setContent(file_get_contents($dirFileContent));
@@ -60,7 +60,7 @@ class ArticleXX extends ArticleX{
      *
      * @return  self
      */ 
-    public function setContent(string $content)
+    public function setContent(string $content = null)
     {
         $this->content = $content;
 

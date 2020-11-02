@@ -71,13 +71,8 @@ class Comment extends EntityFertility{
      *
      * @var CommentStorage
      */
-    protected $replys = [];
+    protected $replys;
 
-    public static function propertySpecificity(){
-
-        return self::CONTENT;
-
-    }
 
     public function replysExists(){
         return !empty($this->getReplys());
@@ -100,7 +95,7 @@ class Comment extends EntityFertility{
      *
      * @return  self
      */ 
-    public function setContent(string $content)
+    public function setContent(string $content = null)
     {
         $this->content = $content;
 
@@ -124,7 +119,7 @@ class Comment extends EntityFertility{
      *
      * @return  self
      */ 
-    public function setLike(int $like)
+    public function setLike(int $like = null)
     {
         $this->like = $like;
 
@@ -148,7 +143,7 @@ class Comment extends EntityFertility{
      *
      * @return  self
      */ 
-    public function setUnLike(int $unLike)
+    public function setUnLike(int $unLike = null)
     {
         $this->unLike = $unLike;
 
@@ -172,7 +167,7 @@ class Comment extends EntityFertility{
      *
      * @return  self
      */ 
-    public function setReplys(CommentStorage $replys)
+    public function setReplys(CommentStorage $replys = null)
     {
         if(empty($replys)) return $this;
 
@@ -203,7 +198,7 @@ class Comment extends EntityFertility{
      *
      * @return  self
      */ 
-    public function setUserOwn(User $userOwn)
+    public function setUserOwn(User $userOwn = null)
     {
         $this->userOwn = $userOwn;
 
@@ -227,7 +222,7 @@ class Comment extends EntityFertility{
      *
      * @return  self
      */ 
-    public function setIsReply(bool $isReply)
+    public function setIsReply(bool $isReply = null)
     {
         $this->isReply = $isReply;
 

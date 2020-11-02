@@ -29,7 +29,7 @@ class NewsList extends Entity{
      *
      * @return  self
      */ 
-    public function setArticles($articles)
+    public function setArticles(ArticleStorage $articles = null)
     {
         $this->articles = $articles;
 

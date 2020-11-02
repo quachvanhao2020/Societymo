@@ -81,7 +81,7 @@ class Article extends Entity{
      *
      * @return  self
      */ 
-    public function setContent(string $content)
+    public function setContent(string $content = null)
     {
         $this->content = $content;
 
@@ -105,7 +105,7 @@ class Article extends Entity{
      *
      * @return  self
      */ 
-    public function setLogo(Image $logo)
+    public function setLogo(Image $logo = null)
     {
         $this->logo = $logo;
 
@@ -140,7 +140,7 @@ class Article extends Entity{
      *
      * @return  self
      */ 
-    public function setCommunication(Communication $communication)
+    public function setCommunication(Communication $communication = null)
     {
         $this->communication = $communication;
 
@@ -164,7 +164,7 @@ class Article extends Entity{
      *
      * @return  self
      */ 
-    public function setTitle(string $title)
+    public function setTitle(string $title = null)
     {
         $this->title = $title;
 

@@ -31,7 +31,7 @@ class ArticleXStorage extends ArrayObject{
             /**
      * Set the value of storage
      *
-     * @param  ArticleX[]  $storage
+     * @param  \Societymo\ArticleX[]  $storage
      *
      * @return  self
      */ 

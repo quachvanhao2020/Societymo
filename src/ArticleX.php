@@ -39,7 +39,7 @@ class ArticleX extends Article {
      *
      * @return  self
      */ 
-    public function setUserOwn(User $userOwn)
+    public function setUserOwn(User $userOwn = null)
     {
         $this->userOwn = $userOwn;
 

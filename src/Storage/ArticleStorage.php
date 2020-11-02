@@ -31,7 +31,7 @@ class ArticleStorage extends ArrayObject{
             /**
      * Set the value of storage
      *
-     * @param  \UltimateModel\Model\Article[]  $storage
+     * @param  \Societymo\Article[]  $storage
      *
      * @return  self
      */ 

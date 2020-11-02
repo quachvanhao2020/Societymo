@@ -30,7 +30,7 @@ class CommentStorage extends ArrayObject{
                 /**
      * Set the value of storage
      *
-     * @param  \UltimateModel\Model\Comment[]  $storage
+     * @param  \Societymo\Comment[]  $storage
      *
      * @return  self
      */ 

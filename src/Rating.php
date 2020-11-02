@@ -19,12 +19,6 @@ class Rating extends Comment
      */
     protected $isBuyer = false;
 
-    public static function propertySpecificity(){
-
-        return self::STAR;
-
-    }
-
     /**
      * Get the value of star
      *
@@ -42,7 +36,7 @@ class Rating extends Comment
      *
      * @return  self
      */ 
-    public function setStar(int $star)
+    public function setStar(int $star = null)
     {
         $this->star = $star;
 
@@ -68,7 +62,7 @@ class Rating extends Comment
      *
      * @return  self
      */ 
-    public function setIsBuyer(bool $isBuyer)
+    public function setIsBuyer(bool $isBuyer = null)
     {
         $this->isBuyer = $isBuyer;
 

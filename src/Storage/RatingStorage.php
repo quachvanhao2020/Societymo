@@ -30,7 +30,7 @@ class RatingStorage extends ArrayObject{
         /**
      * Set the value of storage
      *
-     * @param  \UltimateModel\Model\Rating[]  $storage
+     * @param  \Societymo\Rating[]  $storage
      *
      * @return  self
      */ 

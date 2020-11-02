@@ -28,7 +28,7 @@ class Communication extends Entity{
      *
      * @return  self
      */ 
-    public function setComments(CommentStorage $comments)
+    public function setComments(CommentStorage $comments = null)
     {
         $this->comments = $comments;
 
