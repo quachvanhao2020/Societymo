@@ -11,9 +11,6 @@ class ArticleX extends Article {
         ]);
     }
 
-    public static function propertySpecificity(){
-        return self::CONTENT;
-    }
 
     /**
      * 

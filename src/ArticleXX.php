@@ -3,12 +3,13 @@ namespace Societymo;
 
 class ArticleXX extends ArticleX{
 
-    /**
-     * 
-     *
-     * @var string
-     */
-    protected $content;
+    const DIRFILECONTENT = "dirFileContent";
+
+    public function __toArray(){
+        return array_merge(parent::__toArray(),[
+            self::DIRFILECONTENT => $this->getDirFileContent(),
+        ]);
+    }
         /**
      * 
      *
@@ -38,32 +39,8 @@ class ArticleXX extends ArticleX{
         if(file_exists($dirFileContent)){
             $this->setContent(file_get_contents($dirFileContent));
         }
-
         $this->dirFileContent = $dirFileContent;
         return $this;
     }
 
-    /**
-     * Get the value of content
-     *
-     * @return  string
-     */ 
-    public function getContent()
-    {
-        return $this->content;
-    }
-
-    /**
-     * Set the value of content
-     *
-     * @param  string  $content
-     *
-     * @return  self
-     */ 
-    public function setContent(string $content = null)
-    {
-        $this->content = $content;
-
-        return $this;
-    }
 }

@@ -5,6 +5,13 @@ use YPHP\Entity;
 
 class NewsList extends Entity{
 
+    const ARTICLES = "articles";
+
+    public function __toArray(){
+        return array_merge(parent::__toArray(),[
+            self::ARTICLES => $this->getArticles(),
+        ]);
+    }
     /**
      * 
      *

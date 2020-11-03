@@ -73,6 +73,19 @@ class Comment extends EntityFertility{
      */
     protected $replys;
 
+        /** 
+    * Set the value of childrens
+    *
+    * @param \Societymo\Storage\CommentStorage  $childrens
+    *
+    * @return  self
+    */ 
+   public function setChildrens($childrens = null)
+   {
+       $this->childrens = $childrens;
+       return $this;
+   }
+
 
     public function replysExists(){
         return !empty($this->getReplys());
@@ -169,15 +182,7 @@ class Comment extends EntityFertility{
      */ 
     public function setReplys(CommentStorage $replys = null)
     {
-        if(empty($replys)) return $this;
-
-        foreach ($replys as $key => $value) {
-            $value->setIsReply(true);
-            $value->setParent($this);
-        }
-
         $this->replys = $replys;
-
         return $this;
     }
 

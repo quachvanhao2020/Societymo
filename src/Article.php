@@ -23,9 +23,6 @@ class Article extends Entity{
         ],parent::__toArray());
     }
 
-    public static function propertySpecificity(){
-        return self::CONTENT;
-    }
 
     /**
      * 
