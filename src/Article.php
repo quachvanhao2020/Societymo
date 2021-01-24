@@ -1,15 +1,17 @@
 <?php
 namespace Societymo;
 
-use YPHP\Model\Media\Image;
-use Societymo\Communication;
-use YPHP\Entity;
 
-class Article extends Entity{
+use Societymo\Communication;
+use YPHP\EntityLife;
+use YPHP\Model\Stream\Image;
+
+class Article extends EntityLife{
 
     const TITLE = "title";
     const CONTENT = "content";
     const COUNTCOMMENT = "countComment";
+    const DESCRIPTION = "description";
     const LOGO = "logo";
     const COMMUNICATION = "communication";
 
@@ -37,6 +39,13 @@ class Article extends Entity{
      * @var string
      */
     protected $title;
+
+    /**
+     * 
+     *
+     * @var string
+     */
+    protected $description;
 
         /**
      * 
@@ -164,6 +173,30 @@ class Article extends Entity{
     public function setTitle(string $title = null)
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of description
+     *
+     * @return  string
+     */ 
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set the value of description
+     *
+     * @param  string  $description
+     *
+     * @return  self
+     */ 
+    public function setDescription(string $description = null)
+    {
+        $this->description = $description;
 
         return $this;
     }

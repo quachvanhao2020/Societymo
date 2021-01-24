@@ -1,14 +1,18 @@
 <?php
 namespace Societymo\Factory;
 
-use YPHP\ContainerFactoryInterface;
 use Societymo\Article;
+use YPHP\Factory\EntityFactory;
 use YPHP\FilterInputInterface;
 use YPHP\SortingInputInterface;
+use Societymo\Storage\ArticleStorage;
 
-abstract class BaseArticleFactory implements ContainerFactoryInterface{
+abstract class BaseArticleFactory extends EntityFactory{
 
-        /**
+    const ENTITY = Article::class;
+    const STORAGE = ArticleStorage::class;
+
+    /**
      * Finds an entry of the container by its identifier and returns it.
      *
      * @param string $id Identifier of the entry to look for.
@@ -22,7 +26,7 @@ abstract class BaseArticleFactory implements ContainerFactoryInterface{
      * @param string $before
      * @param FilterInputInterface $filter
      * @param SortingInputInterface $sort
-     * @return mixed
+     * @return ArticleStorage
      */
     public abstract function list(int $first = 0,string $after = "",int $last = -1,string $before = "",FilterInputInterface $filter = null,SortingInputInterface $sort = null);
     /**

@@ -1,11 +1,11 @@
 <?php
 namespace Societymo\Storage;
 
-use YPHP\ArrayObject;
 use Societymo\Storage\Iterator\ArticleIterator;
 use Societymo\Article;
+use YPHP\Storage\EntityStorage;
 
-class ArticleStorage extends ArrayObject{
+class ArticleStorage extends EntityStorage{
 
         /**
      * Create a new iterator from an ArrayObject instance
