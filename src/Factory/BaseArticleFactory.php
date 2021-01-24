@@ -2,12 +2,12 @@
 namespace Societymo\Factory;
 
 use Societymo\Article;
-use YPHP\Factory\EntityFactory;
 use YPHP\FilterInputInterface;
 use YPHP\SortingInputInterface;
 use Societymo\Storage\ArticleStorage;
+use YPHP\Factory\BaseEntityFactory;
 
-abstract class BaseArticleFactory extends EntityFactory{
+abstract class BaseArticleFactory extends BaseEntityFactory{
 
     const ENTITY = Article::class;
     const STORAGE = ArticleStorage::class;
