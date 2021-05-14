@@ -34,6 +34,7 @@ class Communication extends Entity{
      */ 
     public function getComments()
     {
+        if(!$this->comments) $this->comments = new CommentStorage();
         return $this->comments;
     }
 
