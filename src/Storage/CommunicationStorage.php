@@ -1,26 +1,26 @@
 <?php
 namespace Societymo\Storage;
 
-use Societymo\Comment;
-use Societymo\Storage\Iterator\CommentIterator;
-use YPHP\Storage\EntityStorage;
+use YPHP\ArrayObject;
+use Societymo\Communication;
+use Societymo\Storage\Iterator\CommunicationIterator;
 
-class CommentStorage extends EntityStorage{
-    const ENTITY = Comment::class;
+class CommunicationStorage extends ArrayObject{
+
         /**
      * Create a new iterator from an ArrayObject instance
      *
-     * @return CommentIterator
+     * @return CommunicationIterator
      */
     public function getIterator()
     {
-        return new CommentIterator($this->storage);
+        return new CommunicationIterator($this->storage);
     }
 
     /**
      * Get the value of storage
      *
-     * @return  Comment[]
+     * @return  Communication[]
      */ 
     public function getStorage()
     {
@@ -30,7 +30,7 @@ class CommentStorage extends EntityStorage{
                 /**
      * Set the value of storage
      *
-     * @param  \Societymo\Comment[]  $storage
+     * @param  \Societymo\Communication[]  $storage
      *
      * @return  self
      */ 
